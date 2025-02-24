@@ -1,0 +1,12 @@
+{
+  "name": "@scottglz/trivia2025-shared",
+  "version": "1.0.3",
+  "scripts": {
+    "publish": "npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "scott.glazer@igrafx.com",
+  "license": "MIT",
+  "repository": "github:scottglz/trivia2025-shared",
+  "description": "shared code for project"
+}
