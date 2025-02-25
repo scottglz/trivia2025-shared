@@ -22,7 +22,7 @@ export function getDayNumber(yyyymmdd: string) {
    if (!results) {
       throw new Error('bad day format ' + yyyymmdd);
    }
-   const millis = Date.UTC(+results[1], +results[2]-1, +results[3], 12, 0, 0);
+   const millis = Date.UTC(+results[1]!, +results[2]!-1, +results[3]!, 12, 0, 0);
    return Math.floor(millis / MILLIS_PER_DAY); 
 }
 
@@ -42,7 +42,7 @@ export function dayStringToDate(dayString: string) {
    if (!matches) {
       return new Date();
    }
-   return new Date(+matches[1], +matches[2]-1, +matches[3]);
+   return new Date(+matches[1]!, +matches[2]!-1, +matches[3]!);
 }
 
 export const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
